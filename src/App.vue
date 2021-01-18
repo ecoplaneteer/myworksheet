@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <b-navbar class="nav-bar" type="dark">
+      <b-navbar-brand href="#">My WorkSheet Maker</b-navbar-brand>
+    </b-navbar>
+    <MatchingSheet />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MatchingSheet from './containers/MatchingSheet.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld
-  }
-};
+    MatchingSheet,
+  },
+}
 </script>
-
 <style>
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar {
+  background-color: #715dd6;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 </style>
