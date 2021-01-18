@@ -43,7 +43,7 @@
                     :config="{
                       x: stageSize.height - 100,
                       y: 40 + 60 * index,
-                      text: match.matchA,
+                      text: match.matchB,
                       fontSize: 20,
                       fill: 'white',
                     }"
